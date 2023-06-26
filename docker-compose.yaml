@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  ide-rstudio:
+    build:
+      context: .
+    ports:
+      - 8787:8787
+    environment:
+      ROOT: "TRUE"
+      PASSWORD: test
